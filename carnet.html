@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Carnet</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="container">
+
+    <div id="top">
+      <img src="logo.png">
+    </div>
+
+    <div id="sidebar">
+
+      <div class="box" id="pet-info">
+        <h1><strong>CARNET</strong></h1>
+        <!-- Change img based on pet.type  -->
+        <img src="dog.png" />
+        <!-- <img src="cat.png" /> -->
+        <h3>{{pet.name}}</h3>
+        <div class="row">
+          <div class="col-md">
+            <div class="info-item">
+              <small>Raza</small>
+              <p>{{pet.race}}</p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="info-item">
+              <small>Edad</small>
+              <p>{{pet.age}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md">
+            <div class="info-item">
+              <small>Género</small>
+              <p>{{pet.gender}}</p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="info-item">
+              <small>Esterilizado</small>
+              <p>{{pet.health_status}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md">
+            <div class="info-item">
+              <small>Peso</small>
+              <p>{{pet.weight}}</p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="info-item">
+              <small>Altura</small>
+              <p>{{pet.height}}</p>
+              <!-- 0 = baja, 1 = mediana, 2 = grande -->
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <di class="col-lg">
+            <div class="info-item">
+              <small>Nota de salud</small>
+              <p>{{pet.health_note}}</p>
+            </div>
+          </di>
+        </div>
+      </div>
+      
+      <div class="box" id="owner-info">
+        <h3>{{user.name}}</h3>
+        <p>{{user.email}}</p>
+      </div>
+
+    </div>
+
+    <div id="carnet-content">
+      <div id="vaccines" class="list-container">
+        <div class="box list-title">
+          <img src="vaccine.png" />
+          <h2>Vacunas</h2>
+        </div>
+        <div class="box list">
+          <div class="row title">
+            <div class="col date">
+              <p>Fecha</p>
+            </div>
+            <div class="col name">
+              <p>Nombre</p>
+            </div>
+            <div class="col check">
+              <p>Check</p>
+            </div>
+            <div class="col vet">
+              <p>Veterinario</p>
+            </div>
+            <div class="col number">
+              <p>Cédula</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col date">
+              <p>{{vaccine.date}}</p>
+            </div>
+            <div class="col name">
+              <p>{{vaccine.name}}</p>
+            </div>
+            <div class="col check">
+              <img src="check.png">
+            </div>
+            <div class="col vet">
+              <p>{{vaccine.vet.name}}</p>
+            </div>
+            <div class="col number">
+              <p>{{vaccine.vet.number}}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col date">
+              <p>{{vaccine.date}}</p>
+            </div>
+            <div class="col name">
+              <p>{{vaccine.name}}</p>
+            </div>
+            <div class="col check">
+              <img src="check.png">
+            </div>
+            <div class="col vet">
+              <p>{{vaccine.vet.name}}</p>
+            </div>
+            <div class="col number">
+              <p>{{vaccine.vet.number}}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col date">
+              <p>{{vaccine.date}}</p>
+            </div>
+            <div class="col name">
+              <p>{{vaccine.name}}</p>
+            </div>
+            <div class="col check">
+              <img src="uncheck.png">
+            </div>
+            <div class="col vet">
+              <p>{{vaccine.vet.name}}</p>
+            </div>
+            <div class="col number">
+              <p>{{vaccine.vet.number}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="medicine" class="list-container">
+        <div class="box list-title">
+          <img src="medicine.png" />
+          <h2>Desparasitación</h2>
+        </div>
+        <div class="box list">
+          <div class="row title">
+            <div class="col date">
+              <p>Fecha</p>
+            </div>
+            <div class="col check">
+              <p>Check</p>
+            </div>
+            <div class="col vet">
+              <p>Veterinario</p>
+            </div>
+            <div class="col number">
+              <p>Cédula</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col date">
+              <p>{{vaccine.date}}</p>
+            </div>
+            <div class="col check">
+              <img src="uncheck.png">
+            </div>
+            <div class="col vet">
+              <p>{{vaccine.vet.name}}</p>
+            </div>
+            <div class="col number">
+              <p>{{vaccine.vet.number}}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col date">
+              <p>{{vaccine.date}}</p>
+            </div>
+            <div class="col check">
+              <img src="check.png">
+            </div>
+            <div class="col vet">
+              <p>{{vaccine.vet.name}}</p>
+            </div>
+            <div class="col number">
+              <p>{{vaccine.vet.number}}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col date">
+              <p>{{vaccine.date}}</p>
+            </div>
+            <div class="col check">
+              <img src="check.png">
+            </div>
+            <div class="col vet">
+              <p>{{vaccine.vet.name}}</p>
+            </div>
+            <div class="col number">
+              <p>{{vaccine.vet.number}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="services" class="list-container">
+        <div class="box list-title">
+          <img src="service.png" />
+          <h2>Servicios</h2>
+        </div>
+        <div class="box list">
+          <div class="row title">
+            <div class="col date">
+              <p>Fecha</p>
+            </div>
+            <div class="col name">
+              <p>Nombre</p>
+            </div>
+            <div class="col vet">
+              <p>Veterinario</p>
+            </div>
+            <div class="col number">
+              <p>Cédula</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col date">
+              <p>{{vaccine.date}}</p>
+            </div>
+            <div class="col name">
+              <p>{{vaccine.name}}</p>
+            </div>
+            <div class="col vet">
+              <p>{{vaccine.vet.name}}</p>
+            </div>
+            <div class="col number">
+              <p>{{vaccine.vet.number}}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col date">
+              <p>{{vaccine.date}}</p>
+            </div>
+            <div class="col name">
+              <p>{{vaccine.name}}</p>
+            </div>
+            <div class="col vet">
+              <p>{{vaccine.vet.name}}</p>
+            </div>
+            <div class="col number">
+              <p>{{vaccine.vet.number}}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col date">
+              <p>{{vaccine.date}}</p>
+            </div>
+            <div class="col name">
+              <p>{{vaccine.name}}</p>
+            </div>
+            <div class="col vet">
+              <p>{{vaccine.vet.name}}</p>
+            </div>
+            <div class="col number">
+              <p>{{vaccine.vet.number}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

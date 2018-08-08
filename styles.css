@@ -1,0 +1,247 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkkit-box-sizing: border-box;
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+small {
+  display: block;
+  font-size: 8pt;
+  color: grey;
+}
+p {
+  font-size: 10pt;
+}
+h1 {
+  font-size: 18pt;
+}
+
+h2 {
+  font-size: 15pt;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 12pt;
+  margin: 5px 0;
+}
+
+.box {
+  padding: 20px 10px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+#container {
+  width: 1115px;
+  height: 892px;
+  background: url('background.png');
+  background-size: 1115px 892px;
+  margin: 0;
+  padding: 10px; 
+  text-align: left;
+  -webkit-print-color-adjust: exact;
+} 
+
+#container > * {
+  vertical-align: top;
+}
+
+#top {
+  width: 1115px;
+  text-align: center;
+}
+
+#top img {
+  width: 150px;
+  height: auto;
+  display: inline-block;
+}
+
+#sidebar {
+  width: 220px;
+  display: inline-block;
+}
+
+#pet-info {
+  text-align: center;
+  width: 220px;
+}
+
+#pet-info img {
+  width: 90px;
+  height: 90px;
+}
+
+#pet-info h1 {
+  margin: 10px 0 20px 0;
+}
+
+#pet-info .row:after, .list .row:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+#pet-info .row:after {
+  width: 200px;
+}
+
+.list .row:after {
+  width: 280px;
+}
+
+#pet-info .row {
+  width: 200px;
+  margin-top: 20px;
+}
+
+#pet-info [class^="col-"]{
+  float: left;
+}
+
+#pet-info .col-md {
+  width: 100px;
+}
+
+#pet-info .col-lg {
+  width: 200px;
+}
+
+#pet-info [class^="col-"] .info-item {
+  text-align: left;
+  padding-left: 10px;
+}
+
+#owner-info {
+  width: 220px;
+  margin-top: 10px;
+}
+
+#carnet-content {
+  display: inline-block;
+  width: 870px;
+  padding: 0 10px;
+}
+
+.list-container, .list-title, .list-title h2,  .list-title img  {
+  display: inline-block;
+}
+
+.list-title {
+  padding: 10px;
+}
+
+.list-title img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.list-title > * {
+  vertical-align: middle;
+}
+
+#vaccines, #services {
+  margin-top: 10px;
+  width: 460px;
+}
+
+#medicine {
+  width: 385px;
+}
+
+#vaccines .list-title, #vaccines .list, #services .list-title, #vaccines .list  {
+  width: 460px;
+}
+
+#medicine .list-title, #medicine .list {
+  width: 385px;
+}
+
+.list {
+  margin-top: 10px;
+  padding: 20px 0;
+}
+
+.list p {
+  font-weight: lighter;
+  font-size: 8pt;
+}
+
+#vaccines .list .row , #services .list .row {
+  width: 460px;
+}
+
+#medicine .list .row {
+  width: 385px;
+}
+
+.list .row {
+  padding: 5px;
+}
+
+.list .row:nth-child(even) {
+  background-color: #c6ecef;
+}
+
+#vaccines .list .row .col {
+  width: 90px;
+}
+
+#vaccines .list .row .col.date, #vaccines .list .row .col.check {
+  width: 55px;
+}
+
+#vaccines .list .row .col.vet, #vaccines .list .row .col.number {
+  width: 125px;
+}
+
+#medicine .list .row .col {
+  width: 93px;
+}
+
+#medicine .list .row .col.date, #medicine .list .row .col.check {
+  width: 55px;
+}
+
+#medicine .list .row .col.vet, #medicine .list .row .col.number {
+  width: 131px;
+}
+
+#services .list .row .col {
+  width: 90px;
+}
+
+#services .list .row .col.date {
+  width: 60px;
+}
+
+#services .list .row .col.vet, #services .list .row .col.number, #services .list .row .col.name {
+  width: 130px;
+}
+
+.list .row .col {
+  float: left;
+}
+
+.list .row .col p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.list .title p {
+  font-weight: bold;
+}
+
+.list .row .col img {
+  width: 10px;
+  display: inline-block;
+}
+
+.list .row .col.check {
+  text-align: center;
+}
